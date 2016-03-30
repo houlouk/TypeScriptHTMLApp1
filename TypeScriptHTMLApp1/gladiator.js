@@ -139,19 +139,12 @@ $(document).ready(function () {
       function () {
 
 
-          var gladiateurs = JSON.parse(localStorage.getItem("gladiateurs"));
-
-
-          for (var i = 0; i < gladiateurs.length; i++) {
-              $("#pvg1").append(gladiateurs[i].nom);
-              $("#pvg1").append(gladiateurs[i].pv);
-              $("#pvg1").append(gladiateurs[i].force);
-              $("#pvg1").append(gladiateurs[i].agilite);
-              $("#pvg1").append(gladiateurs[i].rapidite);
-
-              $("#pvg1").append("<br/>");
-
-          }
+          $("#gladiateur2").css("display", "inline");
+          $("#creationMode").css("display", "inline");
+          $("#combat").css("display", "inline");
+          $("#combatMode").css("display", "none");
+          $("#add").css("display", "none");
+          $("#get").css("display", "none");
 
       }
     );
@@ -166,7 +159,15 @@ $(document).ready(function () {
     $("#creationMode").click(
       function () {
 
-          $("#gladiateur2").style.display = 'none';
+          $("#gladiateur2").css("display", "none");
+          $("#creationMode").css("display", "none");
+          $("#combat").css("display", "none");
+          $("#combatMode").css("display", "inline");
+          $("#add").css("display", "inline");
+          $("#get").css("display", "inline");
+
+
+
 
       
 
