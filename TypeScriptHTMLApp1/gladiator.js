@@ -8,7 +8,7 @@ var gladiateur = function (nom,pv, force, agilite, rapidite) {
     this.setRapidite(rapidite);
 }
 
-
+//test
 
 
 
