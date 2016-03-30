@@ -1,0 +1,26 @@
+﻿label
+{
+	display: block;
+	width: 150px;
+} 
+
+#global #combatForm {
+    float:left;
+    width:50%;
+}
+#global #deroulementCombat {
+    margin-left:50%  ;
+    
+}
+
+#pvg1 {
+    font-size:larger;
+
+
+}
+
+#pvg2 {
+        font-size:larger;
+
+
+}

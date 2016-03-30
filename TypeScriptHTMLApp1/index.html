@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="gladiator.css" type="text/css" />
+    
+    <script type="text/javascript" src="Scripts/jquery-2.2.2.min.js"></script>
+
+    <script type="text/javascript" src="gladiator.js"></script>
+
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <div id="global">
+       
+    <form id="combatForm">
+        <div id="gladiateur1">
+        <p> <label>nom gladiateur 1</label><input type="text" id="nom1" required="required" /> </p>
+
+        <p> <label>pv gladiateur 1</label><input type="text" id="pv1" pattern="[75-1000]" required="required" /> </p>
+        <p> <label>force gladiateur 1</label><input type="text" id="force1" pattern="[1-9]" required="required" /> </p>
+        <p> <label>agilite gladiateur 1</label><input type="text" id="agilite1" pattern="[1-9]" required="required"/> </p>
+        <p> <label>rapidite gladiateur 1</label><input type="text" id="rapidite1" pattern="[1-9]" required="required" /> </p>
+        </div>
+    <div id="gladiateur2">
+
+        <p> <label>nom gladiateur 2</label><input type="text" id="nom2" required="required" /> </p>
+        <p> <label>pv gladiateur 2</label><input type="text" id="pv2" pattern="[75-1000]" required="required" /> </p>
+        <p> <label>force gladiateur 2 </label><input type="text" id="force2" pattern="[1-9]" required="required" /> </p>
+        <p> <label>agilite gladiateur 2</label><input type="text" id="agilite2" pattern="[1-9]" required="required" /> </p>
+        <p> <label>rapidite gladiateur 2</label><input type="text" id="rapidite2" pattern="[1-9]" required="required" /> </p>
+    </div>
+
+        
+         <p><input type="button" value="valider" id="combat" /></p>
+        <p><input type="button" value="add" id="add" /></p>
+        <p><input type="button" value="get" id="get" /></p>
+        <p><input type="button" value="mode creation" id="creationMode" /></p>
+        <p><input type="button" value="mode combat" id="combatMode" /></p>
+
+
+
+       
+    </form>
+
+
+    <div id="deroulementCombat">
+        <div id="pvg1"></div>
+        <div id="pvg2"></div>
+
+    </div>
+    </div>
+           <!-- <script type="text/javascript">
+
+var combat = document.getElementById('combat');
+
+myLink.onclick = function(){
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "gladiator.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+    return false;
+
+}
+
+
+            </script>-->
+
+
+
+
+
+
+
+
+            <div id="content"></div>
+</body>
+</html>
